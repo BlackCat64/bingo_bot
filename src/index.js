@@ -19,7 +19,7 @@ client.on("messageCreate", (msg) => {
         return;
 
     if (msg.content === "ping") {
-        msg.reply("pong");
+        msg.reply("pong2");
     }
 });
 
