@@ -15,11 +15,9 @@ const client = new Client({
 new CommandHandler({
     client,
     commandsPath: path.join(__dirname, "commands"),
+    eventsPath: path.join(__dirname, "events"),
+    validationsPath: path.join(__dirname, "validations"),
     testServer: process.env.GUILD_ID
-});
-
-client.on("ready", (c) => {
-    console.log(`Logged in as ${c.user.tag}!`);
 });
 
 client.on("messageCreate", (msg) => {

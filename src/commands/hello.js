@@ -7,5 +7,6 @@ module.exports = {
     run: ({interaction}) => {
         interaction.reply(`Hello there, user ${interaction.user}`);
         console.log("hello command successful!")
-    }
+    },
+    devOnly: true
 }
